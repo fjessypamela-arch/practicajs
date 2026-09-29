@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2ff;
+    color: #1e293b;
+}
+
+/* ENCABEZADO */
+
+header {
+    background: #4f46e5;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+
+/* MENÚ */
+
+.menu {
+    background: #312e81;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    background: #6366f1;
+}
+
+
+/* CONTENEDOR */
+
+main {
+    width: 90%;
+    max-width: 850px;
+    margin: 35px auto;
+}
+
+
+/* EJERCICIOS */
+
+.ejercicio {
+    display: none;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+    text-align: center;
+}
+
+.ejercicio.activo {
+    display: block;
+}
+
+.ejercicio h2 {
+    color: #4f46e5;
+    margin-bottom: 25px;
+}
+
+
+/* INPUTS */
+
+input {
+    width: 200px;
+    padding: 12px;
+    margin: 5px;
+    border: 2px solid #c7d2fe;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4f46e5;
+}
+
+
+/* BOTONES */
+
+button {
+    background: #4f46e5;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #3730a3;
+}
+
+
+/* RESULTADOS */
+
+.resultado {
+    margin-top: 20px;
+    padding: 15px;
+    background: #eef2ff;
+    border-left: 5px solid #4f46e5;
+    border-radius: 8px;
+    line-height: 1.8;
+}
+
+
+/* PIE DE PÁGINA */
+
+footer {
+    background: #1e1b4b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu a {
+        width: 100%;
+        text-align: center;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
